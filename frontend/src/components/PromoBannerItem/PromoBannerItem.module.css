@@ -1,0 +1,20 @@
+.title {
+	font-weight: 600;
+	font-size: 14px;
+	color: #fff;
+}
+.text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71429;
+	color: #484848;
+}
+.itemWrap {
+	display: flex;
+	gap: 8px;
+	align-items: flex-start;
+}
+.itemWrap svg {
+	transform: scale(1.67);
+
+}

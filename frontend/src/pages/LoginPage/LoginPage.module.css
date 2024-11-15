@@ -1,0 +1,27 @@
+.loginText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.1;
+  color: #242628;
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 24px;
+}
+
+.loginWrap {
+  margin-top: 40px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  /*padding: 32px;*/
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: 751px;
+}
