@@ -1,0 +1,34 @@
+.blogItem {
+	border-radius: 10px;
+	padding: 15px;
+	width: calc(20% - 20px);
+}
+
+.date {
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: -0.05em;
+	text-transform: uppercase;
+	color: #000;
+	opacity: 0.3;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 17px;
+	letter-spacing: -0.05em;
+	color: #000;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -0.05em;
+	color: #000;
+	opacity: 0.5;
+}
+.image {
+	border-radius: 16px;
+	width: 246px;
+	height: 136px;
+}

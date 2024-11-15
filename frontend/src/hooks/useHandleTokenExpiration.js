@@ -1,22 +1,27 @@
-import { refreshAllToken } from "../redux/auth/operation";
+import {refreshAllToken} from "../redux/auth/operation";
 
 export default async function UseHandleTokenExpiration(
-		setError,
+		error,
 		dispatch,
 		func,
-		arg,
-		setLoading
+		{setError, setLoading, setData}
 ) {
-	try {
-		setLoading && setLoading(true);
-		await dispatch(refreshAllToken());
-		const response =  await func(arg);
-		setError(null);
-		setLoading && setLoading(false);
-		return response
-	} catch (error) {
-		setLoading && setLoading(false);
+	if (error === 'Access token expired') {
+		try {
+			setLoading(true);
+			await dispatch(refreshAllToken());
+			const response =  await func();
+			setData(response.data);
+			setError(null);
+			setLoading(false);
+		} catch (error) {
+			setLoading(false);
+			setError(error);
+			setData([]);
+		}
+	}else {
+		setLoading(false);
 		setError(error);
-		throw error;
+		setData([]);
 	}
 }

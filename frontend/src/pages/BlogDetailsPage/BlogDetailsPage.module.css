@@ -1,0 +1,32 @@
+.blogPageContainer {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 0 138px;
+	overflow: hidden;
+	margin-top: 36px;
+}
+
+.blogPageContainer::before,
+.blogPageContainer::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 600px;
+	height: 573px;
+	background: radial-gradient(circle, #1fff1a, transparent);
+	border-radius: 100%;
+	box-shadow: 10px 10px 1100px rgba(0, 255, 0, 0.5);
+	z-index: -1;
+}
+
+.blogPageContainer::before {
+	left: -300px;
+	top: 100px;
+}
+
+.blogPageContainer::after {
+	right: -300px;
+	bottom: -200px;
+}

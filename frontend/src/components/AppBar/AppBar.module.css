@@ -1,0 +1,70 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 35px 45px 35px 59px;
+}
+.navigation {
+	display: flex;
+	gap: 17px;
+}
+.navigationText {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -0.05em;
+	text-align: center;
+	color: #000;
+	opacity: 0.5;
+	text-decoration: none;
+}
+.loginButt {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 24px;
+	padding: 8px 24px;
+	width: 114px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+.signupButton {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 24px;
+	padding: 8px 24px;
+	width: 114px;
+	height: 42px;
+	background: #04aa00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.buttWrap {
+	display: flex;
+	gap: 9px
+}
+.signupText {
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: -0.05em;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+.loginText {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -0.05em;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+.active {
+	opacity: 1;
+}

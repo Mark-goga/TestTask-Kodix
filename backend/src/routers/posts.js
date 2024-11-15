@@ -5,8 +5,9 @@ import * as postsController from "../controller/posts.js";
 
 const postsRouter = Router();
 
+postsRouter.get('/' , ctrlWrapper(postsController.getPostsController));
+
 postsRouter.use(authenticate);
 
-postsRouter.get('/' , ctrlWrapper(postsController.getPostsController));
 postsRouter.get('/:postId' , ctrlWrapper(postsController.getPostDetailsController));
 export default postsRouter;

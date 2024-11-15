@@ -1,0 +1,43 @@
+.blogItem {
+	border-radius: 10px;
+	width: 471px;
+}
+
+.date {
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: -0.05em;
+	text-transform: uppercase;
+	color: #000;
+	opacity: 0.3;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 17px;
+	letter-spacing: -0.05em;
+	color: #000;
+	margin-bottom: 8px;
+	margin-top: 20px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -0.05em;
+	color: #000;
+	opacity: 0.5;
+}
+.image {
+	border-radius: 16px;
+	min-width: 225px;
+	max-width: 225px;
+	min-height: 136px;
+	max-height: 136px;
+}
+.itemWrap {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
